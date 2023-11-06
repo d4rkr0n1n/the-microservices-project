@@ -1,0 +1,32 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://eureka-service:8761/eureka
+
+server:
+    port: 80
+spring:
+    application:
+        name: api-gateway
+    cloud:
+        discovery:
+            enabled: true
+        gateway:
+            discovery:
+                locator:
+                    enabled: true
+            routes:
+            -   id: eureka-service
+                uri: http://eureka-service:8761
+                predicates:
+                - Path=/eureka/**
+                filters:
+                - SetPath=/
+            -   id: application
+                uri: http://application:8080
+                predicates:
+                - Path=/api/v1/**
+            
+        service-registry:
+            auto-registration:
+                fail-fast: true
