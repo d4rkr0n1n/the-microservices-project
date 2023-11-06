@@ -3,7 +3,8 @@ FROM maven
 WORKDIR /app
 
 COPY pom.xml ./
-COPY src ./src
 RUN mvn dependency:resolve
+
+COPY src ./src
 
 ENTRYPOINT ["mvn", "spring-boot:run"]
