@@ -8,4 +8,4 @@ COPY src ./src
 ENV ENV_VALUE="TestDocker"
 RUN mvn test
 
-ENTRYPOINT ["mvn", "spring-boot:test-run"]
+ENTRYPOINT ["mvn", "spring-boot:run"]

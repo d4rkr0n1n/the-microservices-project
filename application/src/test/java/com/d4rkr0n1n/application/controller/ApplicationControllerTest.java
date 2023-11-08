@@ -1,7 +1,5 @@
 package com.d4rkr0n1n.application.controller;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 
