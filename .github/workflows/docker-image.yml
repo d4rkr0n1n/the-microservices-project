@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build Microservices
+      env:
+        MY_ENV_VALUE: "Github Value"
       run:  docker-compose -f "docker-compose.yml" up -d --build
