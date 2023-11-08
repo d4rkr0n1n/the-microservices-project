@@ -16,12 +16,6 @@ spring:
                 locator:
                     enabled: true
             routes:
-            -   id: eureka-service
-                uri: http://eureka-service:8761
-                predicates:
-                - Path=/eureka/**
-                filters:
-                - SetPath=/
             -   id: application
                 uri: http://application:8080
                 predicates:
