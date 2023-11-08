@@ -31,6 +31,8 @@ services:
     networks:
       - microservices-network
     container_name: application
+    environment:
+      - ENV_VALUE=${MY_ENV_VALUE}
 
 networks:
   microservices-network:

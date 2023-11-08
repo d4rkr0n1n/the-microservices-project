@@ -4,12 +4,13 @@ server:
 spring:
   application:
     name: EUREKA-SERVICE
-  config:
-    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
     response-cache-update-interval-ms: 5000
