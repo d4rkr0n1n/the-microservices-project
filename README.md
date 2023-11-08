@@ -1,5 +1,7 @@
 # The Microservices Project
 
 - [x] Create a basic spring boot microservice
-- [ ] Create a config server & add actuator
+- [ ] Create actuator
+- [ ] Create a config server
 - [ ] Config docker push
+- [ ] Config tf+aws
