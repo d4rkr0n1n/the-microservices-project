@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: write
 jobs:
   merge-master-back-to-dev:
     timeout-minutes: 2
