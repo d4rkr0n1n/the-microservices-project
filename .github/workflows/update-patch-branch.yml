@@ -20,5 +20,5 @@ jobs:
           git fetch --unshallow
           git checkout patch
           git pull
-          git merge --no-ff master -m "Auto-merge master back to dev"
+          git merge --no-ff master -m "Auto-merge master back to patch branch"
           git push
