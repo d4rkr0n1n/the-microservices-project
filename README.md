@@ -5,3 +5,5 @@
 - [ ] Create a config server
 - [ ] Config docker push
 - [ ] Config tf+aws
+- [ ] Separate repo for different projects
+- [ ] Add codeql
