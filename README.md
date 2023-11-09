@@ -1,5 +1,11 @@
 # The Microservices Project
 
+## Status
+
+[![Microservices Build](https://github.com/d4rkr0n1n/the-microservices-project/actions/workflows/docker-image.yml/badge.svg)](https://github.com/d4rkr0n1n/the-microservices-project/actions/workflows/docker-image.yml)
+
+## ToDos
+
 - [x] Create a basic spring boot microservice
 - [ ] Create actuator
 - [ ] Create a config server
