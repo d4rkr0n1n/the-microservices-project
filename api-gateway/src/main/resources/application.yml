@@ -24,3 +24,9 @@ spring:
         service-registry:
             auto-registration:
                 fail-fast: true
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
