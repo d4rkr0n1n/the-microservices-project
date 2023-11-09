@@ -7,7 +7,7 @@
 ## ToDos
 
 - [x] Create a basic spring boot microservice
-- [ ] Create actuator
+- [x] Create actuator
 - [ ] Create a config server
 - [ ] Config docker push
 - [ ] Config tf+aws
