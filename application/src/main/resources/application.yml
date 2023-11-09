@@ -17,3 +17,9 @@ spring:
 
 key:
   something: ${ENV_VALUE}
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
